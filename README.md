@@ -1,10 +1,24 @@
+##اول مشروع انفذه لاستخراج البيانات، كتبت سكريبت بلغة Python لاستخراج بيانات الوظائف من موقع "وظف" باستخدام تقنيات Web Scraping. الهدف الرئيسي هو جمع معلومات محددة حول الوظائف المتاحة على الموقع، مثل:
+اسم الوظيفة
+اسم الشركة
+العنوان
+الأدوات والتقنيات المستخدمة:
+لغة البرمجة: Python
+المكتبات:
+requests: لإرسال طلبات HTTP إلى موقع "وظف" واسترداد محتوى الصفحة.
+BeautifulSoup: لتحليل محتوى HTML واستخراج البيانات المطلوبة باستخدام أدوات البحث مثل find و find_all.
+التقنيات: Web Scraping, HTML Parsing
+
+بعد كده تم استخدام الذكاء الاصطناعي لمراجعة الكود وتحسين أدائه، وتنظيمه لضمان جودته وكفاءته.
+الخطوة الاخيرة تخزين البيانات في ملف csv
+
+
 import requests
 from bs4 import BeautifulSoup
 import time
 import random
 import csv
 
-# الأساسيات
 base_url = "https://wuzzuf.net/search/jobs/?q=data&a=hpb&page="
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
